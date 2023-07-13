@@ -9,7 +9,7 @@ export NODE_OPTIONS=--openssl-legacy-provider
 npm run docs:build
 
 # 进入生成的文件夹
-cd src/.vuepress
+cd src/.vuepress/dist
 
 git init
 git add -A

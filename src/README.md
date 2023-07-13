@@ -7,6 +7,7 @@ heroImage: /moyu.png
 heroText: 摸鱼科技工作室
 heroFullScreen: true
 tagline: 数字验证、后端个人学习站
+bgImage: /hero.png
 projects:
   - icon: project
     name: 数字电路后端学习
