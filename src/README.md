@@ -12,12 +12,22 @@ projects:
   - icon: project
     name: 数字电路后端学习
     desc: 与智商高达50的人一起学习
-    link: https://你的项目链接
+    link: https://darenttheyang.github.io/backend-note/posts/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%E5%90%8E%E7%AB%AF/1.html
 
   - icon: project
     name: 数字电路验证学习
     desc: 目前正在学习
-    link: https://链接地址
+    link: https://www.bilibili.com/video/BV1QE411Z7XF/
 
-footer: 一个杂酱开发者
+  - icon: link
+    name: EDAplayground
+    desc: 在线的EDA工具
+    link: https://www.edaplayground.com/
+
+  - icon: link
+    name: 牛客网
+    desc: 一个练习代码和找工作的地方
+    link: https://www.nowcoder.com/
+
+footer: 一个杂鱼开发者
 ---
