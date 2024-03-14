@@ -1,0 +1,87 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as n,c as i,d as s,b as a,f as r}from"./app-4864bddc.js";const d="/backend-note/数字电路验证/agent及其内部连接方式.png",v={},l=r(`<h1 id="_4、master-agent、slave-agent与其子对象" tabindex="-1"><a class="header-anchor" href="#_4、master-agent、slave-agent与其子对象" aria-hidden="true">#</a> 4、master agent、slave agent与其子对象</h1><h2 id="_4-1-driver" tabindex="-1"><a class="header-anchor" href="#_4-1-driver" aria-hidden="true">#</a> 4.1 driver</h2><p>driver是验证平台中直接与DUT通信的模块，作用是把transaction转换成pin级信号，用于驱动DUT。它是agent的一个<strong>子对象</strong>（而不是子类），通常由agent通过factory方法实例化。同时，他需要有一个与sequence（不是sequencer）的通信方法，这就是UVM的一种内建的通信方法。所以，它的代码应该这样写：</p><div class="language-systemverilog line-numbers-mode" data-ext="systemverilog"><pre class="language-systemverilog"><code>// uvm_driver是一个带有参数的类，需要把transaction的类型加上
+class my_driver extends uvm_driver#(my_transaction);
+    // 注册为factory部件
+    \`uvm_component_utils(my_driver)
+    
+    // 构造函数
+    function new(string name =&quot;&quot;, uvm_component parent);
+        super.new(name, parent);
+    endfunction
+    
+    // driver是一个组件（component），它的行为都是靠各种各样的phase控制的，
+    // 这个知识点在讲field机制的时候会着重记录。总之需要记得：run_phase是仿真开始时，component完成主要任务的phase。
+    virtual task run_phase(uvm_phase phase);
+        super.build_phase(phase);
+        // driver需要一刻不停地工作，不停地从sequence取数据并用于驱动DUT，所以需要死循环来实现。
+        forever begin
+            // 不停地从sequencer拿数据
+            seq_item_port.get_next_item(req);
+            
+            // 作为第一个例子，本driver不与DUT相连，只打印出收取到的数据，后续会整合进更多东西。
+            // uvm_info是uvm的打印宏，功能比display多，需要：打印内容、打印名和冗余度三个参数。
+            \`uvm_info(&quot;DRV_RUN_PHASE&quot;, req.sprint(), UVM_MEDIUM)
+            #100;
+            // 通知sequencer该条数据已经使用完毕
+        	seq_item_port.item_done();
+        end
+    endtask
+    
+endclass
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_4-2-monitor" tabindex="-1"><a class="header-anchor" href="#_4-2-monitor" aria-hidden="true">#</a> 4.2 monitor</h2><p>monitor只有一个目的，从DUT端口读取数据，并把它送到合适的位置。比如，master agent的monitor是从输入端口读取数据，送到reference model，而slave agent的monitor是读取DUT的输出数据，把数据送给scoreboard。作为第一个测试用例， 我就不让monitor送数据出去，而只是打印了。</p><div class="language-systemverilog line-numbers-mode" data-ext="systemverilog"><pre class="language-systemverilog"><code>class my_monitor extends uvm_monitor;
+    // 注册factory
+    \`uvm_component_utils(my_monitor)
+    
+    // 构造函数
+    function new(string name = &quot;&quot;, uvm_component parent);
+        super.new(name, parent);
+    endfunction
+    
+    // build phase需要初始化、例化，但这边先不做
+    // virtual function void build_phase(uvm_phase phase);
+    //     super.build_phase(phase);
+    // endfunction
+    
+    // 接收数据，但这里先不接收，仅仅打印信息就可以
+    virtual task run_phase(uvm_phase phase);
+        \`uvm_info(&quot;MON_RUN_PHASE&quot;, &quot;Monitor run!&quot;, UVM_MEDIUM)
+        #100;
+    endtask
+    
+endclass
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_4-3-master-agent和slave-agent" tabindex="-1"><a class="header-anchor" href="#_4-3-master-agent和slave-agent" aria-hidden="true">#</a> 4.3 master agent和slave agent</h2><p>刚才提到过master agent里需要例化3个子对象，像这种就要在开始先声明句柄，再在build_phase中利用factory机制例化。除此之外，还要负责把sequencer和driver之间连起来。有些方法可以把master和slave的agent区分开来，达到写1次代码，复用2次的效果。</p><p>另外，当顶层有些数据需要发给子对象时，可以发到agent，再由子对象从agent中取用；当monitor需要发送数据给reference model时，也要通过agent的analysis port往外发。当然，这个analysis port是由monitor传来的一个句柄，不像是monitor中直接再例化一个对象。作为第一次跑的程序，就不做这个analysis port了。</p><div class="language-systemverilog line-numbers-mode" data-ext="systemverilog"><pre class="language-systemverilog"><code>class master_agent extends uvm_agent;
+    // 先声明需要例化的对象的句柄，分别为sequencer、driver和monitor
+    my_sequencer m_seqr;
+    my_driver m_driv;
+    my_monitor m_mon;
+    
+    // 老三样，注册factory、写构造函数，然后根据需要看看写不写build_phase
+    \`uvm_component_utils(master_agent)
+    
+    function new(string name = &quot;&quot;, uvm_component parent);
+        super.new(name, parent);
+    endfunction
+    
+    // 因为需要创建子对象，所以build phase必不可少
+    virtual function void build_phase(uvm_phase phase);
+        super.build_phase(phase);
+        // factory机制的例化方法
+        // 首先需要判断，这个agent是否需要启动active模式
+        if(is_active == UVM_ACTIVE) begin
+            m_seqr = my_sequencer::type_id::create(&quot;m_seqr&quot;, this);
+            m_driv = my_driver::type_id::create(&quot;m_driv&quot;, this);
+        end
+        
+        // 不论是否是active模式，都需要例化monitor
+        m_mon = my_monitor::type_id::create(&quot;m_mon&quot;, this);
+    endfunction
+    
+    // 需要将sequencer与driver相连，这种相连需要在connect phase中实现。
+    virtual function void connect_phase(uvm_phase phase);
+        super.connect_phase(phase);
+        // 与analysis port不同，这个连接只需要调用UVM的内建函数就可以了。
+        if(is_active == UVM_ACTIVE)
+            m_driv.seq_item_port.connect(m_seqr.seq_item_export);
+    endfunction
+    
+endclass
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>对于slave agent，只需要在env例化agent的时候指定is_active的值就可以了，直接规定is_active == UVM_PASSIVE就可以。</p><p>下面这张图可以帮助记忆：</p><figure><img src="`+d+'" alt="agent及其内部连接关系" tabindex="0" loading="lazy"><figcaption>agent及其内部连接关系</figcaption></figure>',14);function t(m,c){return n(),i("div",null,[s(" more "),a("agent分为两种模式，一种叫做active模式，一种称为passive模式。一个完整的active agent内包含三个组件，分别是sequencer、driver和monitor，它承担三个任务，每个组件各有一个任务：sequencer从sequence中取得transaction数据并发送给driver、driver解开transaction中的数据，并用于驱动DUT、monitor则从DUT的输入端口获取数据，并发送给reference model。这样一个完整的active mode的agent，也称为master agent。而passive模式的agent只含有一个模块：monitor，它会从DUT的输出端获取DUT的输出信号，并发送给scoreboard。这种passive agent也被称为slave agent。 "),l])}const b=e(v,[["render",t],["__file","4.html.vue"]]);export{b as default};

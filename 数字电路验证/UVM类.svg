@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="197.40967mm"
+   height="184.82216mm"
+   viewBox="0 0 197.40967 184.82216"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="UVM类.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.1893044"
+     inkscape:cx="276.63229"
+     inkscape:cy="486.8392"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-4.665435,-11.329813)">
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="58.23457"
+       y="45.934322"
+       id="text398"><tspan
+         sodipodi:role="line"
+         id="tspan396"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="58.23457"
+         y="45.934322">uvm_object</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="58.23457"
+         y="51.225983"
+         id="tspan1396" /></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004"
+       width="41.215042"
+       height="14.787076"
+       x="47.625397"
+       y="37.439617" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="59.641201"
+       y="19.95702"
+       id="text398-6"><tspan
+         sodipodi:role="line"
+         id="tspan396-75"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="59.641201"
+         y="19.95702">uvm_void</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-93"
+       width="41.215042"
+       height="14.787076"
+       x="47.625397"
+       y="11.462313" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="11.305036"
+       y="73.903114"
+       id="text398-4"><tspan
+         sodipodi:role="line"
+         id="tspan396-3"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="11.305036"
+         y="73.903114">uvm_transaction</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-4"
+       width="41.215042"
+       height="14.787076"
+       x="4.7979345"
+       y="65.147476" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="94.949745"
+       y="73.554909"
+       id="text398-1"><tspan
+         sodipodi:role="line"
+         id="tspan396-1"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="94.949745"
+         y="73.554909">uvm_report_object</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3"
+       width="41.215042"
+       height="14.787076"
+       x="90.452858"
+       y="65.147476" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="96.828705"
+       y="97.021935"
+       id="text398-1-1"><tspan
+         sodipodi:role="line"
+         id="tspan396-1-0"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="96.828705"
+         y="97.021935">uvm_component</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-2"
+       width="41.215042"
+       height="14.787076"
+       x="90.452858"
+       y="88.827415" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="93.016022"
+       y="120.03533"
+       id="text398-1-2"><tspan
+         sodipodi:role="line"
+         id="tspan396-1-1"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="93.016022"
+         y="120.03533">uvm_sequencer_base</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-4"
+       width="41.215042"
+       height="14.787076"
+       x="90.452858"
+       y="111.62894" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="90.985527"
+       y="139.81131"
+       id="text398-1-7"><tspan
+         sodipodi:role="line"
+         id="tspan396-1-3"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="90.985527"
+         y="139.81131">uvm_sequencer_param</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="90.985527"
+         y="145.10297"
+         id="tspan1400">_base#(REQ,RSP)</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-5"
+       width="41.215042"
+       height="14.787076"
+       x="89.980927"
+       y="134.54477" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="97.290047"
+       y="162.73126"
+       id="text398-1-5"><tspan
+         sodipodi:role="line"
+         id="tspan396-1-5"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="97.290047"
+         y="162.73126">uvm_sequencer</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="97.290047"
+         y="168.02292"
+         id="tspan1402">#(REQ,RSP)</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-21"
+       width="41.215042"
+       height="14.787076"
+       x="89.980927"
+       y="157.46059" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="171.9248"
+       y="56.152309"
+       id="text398-1-52"><tspan
+         sodipodi:role="line"
+         id="tspan396-1-19"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="171.9248"
+         y="56.152309">uvm_agent</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-1"
+       width="41.215042"
+       height="14.787076"
+       x="160.72755"
+       y="47.957787" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="171.44421"
+       y="78.576607"
+       id="text398-1-11"><tspan
+         sodipodi:role="line"
+         id="tspan396-1-39"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="171.44421"
+         y="78.576607">uvm_driver</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="171.44421"
+         y="83.868271"
+         id="tspan1404" /></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-26"
+       width="41.215042"
+       height="14.787076"
+       x="160.72755"
+       y="70.170212" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="169.79573"
+       y="100.78904"
+       id="text398-1-0"><tspan
+         sodipodi:role="line"
+         id="tspan396-1-05"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="169.79573"
+         y="100.78904">uvm_monitor</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-0"
+       width="41.215042"
+       height="14.787076"
+       x="160.72755"
+       y="92.382645" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="167.22122"
+       y="123.00146"
+       id="text398-1-6"><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="167.22122"
+         y="123.00146"
+         id="tspan1406">uvm_scoreboard</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-16"
+       width="41.215042"
+       height="14.787076"
+       x="160.72755"
+       y="114.59507" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="173.4751"
+       y="144.71989"
+       id="text398-1-8"><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="173.4751"
+         y="144.71989"
+         id="tspan1410">uvm_env</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-3"
+       width="41.215042"
+       height="14.787076"
+       x="160.72755"
+       y="136.80753" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="173.56915"
+       y="167.21448"
+       id="text398-1-57"><tspan
+         sodipodi:role="line"
+         id="tspan396-1-52"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="173.56915"
+         y="167.21448">uvm_test</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-55"
+       width="41.215042"
+       height="14.787076"
+       x="160.72755"
+       y="159.01996" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="173.09889"
+       y="189.42691"
+       id="text398-1-4"><tspan
+         sodipodi:role="line"
+         id="tspan396-1-9"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="173.09889"
+         y="189.42691">uvm_root</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-3-31"
+       width="41.215042"
+       height="14.787076"
+       x="160.72755"
+       y="181.23239" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="8.0142832"
+       y="97.23381"
+       id="text398-3"><tspan
+         sodipodi:role="line"
+         id="tspan396-7"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="8.0142832"
+         y="97.23381">uvm_sequence_item</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-0"
+       width="41.215042"
+       height="14.787076"
+       x="4.7979345"
+       y="88.827415" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="8.065959"
+       y="120.03534"
+       id="text398-2"><tspan
+         sodipodi:role="line"
+         id="tspan396-39"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="8.065959"
+         y="120.03534">uvm_sequence_base</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-9"
+       width="41.215042"
+       height="14.787076"
+       x="4.7979345"
+       y="111.62894" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="11.805264"
+       y="140.159"
+       id="text398-41"><tspan
+         sodipodi:role="line"
+         id="tspan396-9"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="11.805264"
+         y="140.159">uvm_sequence#</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#000000;stroke-width:0.265"
+         x="11.805264"
+         y="145.45065"
+         id="tspan1398">(REQ,RSP)</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect1004-8"
+       width="41.215042"
+       height="14.787076"
+       x="4.7979345"
+       y="134.43047" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 67.741802,26.362573 v 11.12345"
+       id="path1470" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 66.851926,36.206826 0.778642,1.279197 1.056729,-1.167962"
+       id="path1472" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="M 67.296865,52.113357 22.358132,64.960941"
+       id="path1474" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 22.636218,63.904214 -0.278086,1.167961"
+       id="path1476" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="M 67.074396,52.168975 109.56597,65.016559"
+       id="path1478" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 109.12103,64.015447 0.50056,0.945494"
+       id="path1480" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 24.30429,79.932799 v 8.868312"
+       id="path1484" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 23.517744,87.817927 0.707891,0.943856 0.786547,-0.884863"
+       id="path1486" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.253738"
+       d="m 24.014067,103.7242 v 8.08822"
+       id="path1484-9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.253738"
+       d="m 23.223398,110.91573 0.711602,0.86083 0.790671,-0.80703"
+       id="path1486-8" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.248899"
+       d="m 23.541418,126.57667 v 7.76523"
+       id="path1484-4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.248899"
+       d="m 22.748976,133.48101 0.713197,0.82645 0.792443,-0.7748"
+       id="path1486-3" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 110.27731,79.995327 v 8.868312"
+       id="path1484-1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 109.49077,87.880455 0.70789,0.943856 0.78655,-0.884863"
+       id="path1486-4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.251121"
+       d="m 110.39531,103.67038 v 7.96378"
+       id="path1484-91" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 109.60876,110.65098 0.70789,0.94385 0.78655,-0.88486"
+       id="path1486-2" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.255193"
+       d="m 109.49097,126.34624 v 8.1859"
+       id="path1484-5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.255193"
+       d="m 108.70076,133.62461 0.71119,0.87124 0.79022,-0.81678"
+       id="path1486-6" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.255193"
+       d="m 109.84499,149.36316 v 8.1859"
+       id="path1484-5-0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.255193"
+       d="m 109.05478,156.64153 0.71119,0.87124 0.79022,-0.81678"
+       id="path1486-6-6" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="M 131.74655,95.486759 160.21954,54.822298"
+       id="path1690" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 160.61282,77.160222 -27.60779,18.011918 -1.10116,0.393271 28.63029,4.483319"
+       id="path1692" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="m 160.45551,121.99338 -28.6303,-26.663932 28.86626,49.159162"
+       id="path1694" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       d="M 160.53416,166.35461 131.6679,95.408103 160.61282,188.61388"
+       id="path1696" />
+  </g>
+</svg>
