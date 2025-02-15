@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="117.61738mm"
+   height="71.121368mm"
+   viewBox="0 0 117.61738 71.121368"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="set_type_override_by_type_B.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.3786088"
+     inkscape:cx="197.17408"
+     inkscape:cy="129.06704"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="243.47025"
+       y="219.68803"
+       width="30.025023"
+       height="27.94408"
+       id="rect505" />
+  </defs>
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-13.104405,-40.134384)">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect236"
+       width="117.35238"
+       height="70.856369"
+       x="13.236904"
+       y="40.266884" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect352"
+       width="32.091099"
+       height="18.5625"
+       x="20.92214"
+       y="48.057999" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect352-2"
+       width="32.091099"
+       height="18.5625"
+       x="20.92214"
+       y="84.711067" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.264999"
+       id="rect352-4"
+       width="32.091099"
+       height="18.5625"
+       x="87.671524"
+       y="84.711067" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:none;stroke:#000000;stroke-width:0.264999"
+       x="40.97908"
+       y="89.430351"
+       id="text443"><tspan
+         sodipodi:role="line"
+         id="tspan441"
+         style="fill:#000000;stroke-width:0.265"
+         x="40.97908"
+         y="89.430351">driver</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="104.45339"
+       y="89.430351"
+       id="text497"><tspan
+         sodipodi:role="line"
+         id="tspan495"
+         style="stroke-width:0.265"
+         x="104.45339"
+         y="89.430351">monitor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;stroke:#000000;stroke-width:0.264999"
+       x="34.529396"
+       y="52.226696"
+       id="text501"><tspan
+         sodipodi:role="line"
+         id="tspan499"
+         style="stroke-width:0.265"
+         x="34.529396"
+         y="52.226696">sequencer</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text503"
+       style="font-size:16px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';white-space:pre;shape-inside:url(#rect505);display:inline;fill:#000000;stroke:#000000;stroke-width:1.00157" />
+    <rect
+       style="fill:none;stroke:#2434f1;stroke-width:0.264999;stroke-opacity:1"
+       id="rect621"
+       width="29.102224"
+       height="11.326271"
+       x="22.337919"
+       y="54.114407" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:none;stroke:#2434f1;stroke-width:0.264999;stroke-opacity:1"
+       x="26.113348"
+       y="60.957363"
+       id="text2063"><tspan
+         sodipodi:role="line"
+         id="tspan2061"
+         style="stroke:#2434f1;stroke-width:0.265;stroke-opacity:1"
+         x="26.113348"
+         y="60.957363">transaction B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:none;stroke:#f12424;stroke-width:0.264999;stroke-opacity:1"
+       x="114.55025"
+       y="46.808453"
+       id="text3738"><tspan
+         sodipodi:role="line"
+         id="tspan3736"
+         style="fill:#000000;stroke:#000000;stroke-width:0.265;stroke-opacity:1"
+         x="114.55025"
+         y="46.808453">agent</tspan></text>
+    <rect
+       style="fill:none;stroke:#2434f1;stroke-width:0.264999;stroke-opacity:1"
+       id="rect621-7"
+       width="29.102224"
+       height="11.326271"
+       x="22.524324"
+       y="90.58905" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:none;stroke:#2434f1;stroke-width:0.264999;stroke-opacity:1"
+       x="26.299753"
+       y="97.432007"
+       id="text2063-9"><tspan
+         sodipodi:role="line"
+         id="tspan2061-1"
+         style="stroke:#2434f1;stroke-width:0.265;stroke-opacity:1"
+         x="26.299753"
+         y="97.432007">transaction B</tspan></text>
+    <rect
+       style="fill:none;stroke:#2434f1;stroke-width:0.264999;stroke-opacity:1"
+       id="rect621-2"
+       width="29.102224"
+       height="11.326271"
+       x="89.265022"
+       y="90.755905" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:none;stroke:#2434f1;stroke-width:0.264999;stroke-opacity:1"
+       x="93.040451"
+       y="97.598862"
+       id="text2063-0"><tspan
+         sodipodi:role="line"
+         id="tspan2061-15"
+         style="stroke:#2434f1;stroke-width:0.265;stroke-opacity:1"
+         x="93.040451"
+         y="97.598862">transaction B</tspan></text>
+  </g>
+</svg>
